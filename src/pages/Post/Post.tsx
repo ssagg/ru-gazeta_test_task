@@ -24,7 +24,7 @@ const Post: React.FC = () => {
   }, [id]);
 
   return (
-    <div className={styles.wrapper}>
+    <section className={styles.wrapper}>
       {isLoading ? (
         "Loading..."
       ) : (
@@ -37,7 +37,7 @@ const Post: React.FC = () => {
       <div>
         <Button onClick={() => navigate(-1)} children={"Back"} />
       </div>
-    </div>
+    </section>
   );
 };
 
